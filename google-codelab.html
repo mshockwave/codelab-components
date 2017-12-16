@@ -68,6 +68,11 @@ prevent syntax highlighting code blocks, respectively:
   <template strip-whitespace>
     <style include="layout-style"></style>
     <style include="codelab-style"></style>
+    <style>
+      app-drawer-layout {
+        background-color: var(--google-codelab-content-background, --paper-grey-300);
+      }
+    </style>
 
     <iron-localstorage name="{{title}}" value="{{state}}" hidden
         on-iron-localstorage-load-empty="_stateInit"
